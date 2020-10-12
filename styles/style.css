@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Raleway&display=swap");
+
+* {
+  color: #000;
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+  font-family: "Libre Baskerville", serif;
+}
+
+body {
+  background: #f7f4f3;
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+
+#navbar {
+  background: #590d14;
+  -webkit-box-shadow: 5px 5px 5px #232c33;
+  box-shadow: 5px 5px 5px #232c33;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-ul {
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding-left: 0;
+}
+
+.navbar-li {
+  list-style: none;
+}
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b49fcc;
+}
+
+a:visited {
+  color: #dfcbfa;
+}
+
+a:active {
+  color: #1f7a8c;
+}
+
+/* Section Title */
+
+#welcome-section {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+/* Section Projects */
+
+#projects {
+  background: #dfcbfa;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#projects iframe {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid #561b59;
+  display: flex;
+  height: 320px;
+  margin: auto;
+  width: 85%;
+}
+
+.projects-iframe-p {
+  background: #561b59;
+  color: #fff;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 85%;
+}
+
+/* Section Contact */
+
+#section-contact {
+  margin-top: 50px;
+}
+
+#section-contact a:link {
+  color: #000;
+}
+
+#section-contact a:visited {
+  color: #000;
+}
+
+.contact-lets-talk {
+  text-align: center;
+}
+
+.social-media {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  transition: -webkit-transform 0.5s ease-out;
+  -o-transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.fab {
+  font-size: 20px;
+  margin: 5px 0;
+  padding: 5px 0;
+}
+
+.social-media:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* Footer */
+
+footer {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #561b59;
+  color: #fff;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 20px;
+  height: 25px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+
+  /* Section Projects */
+
+  .project-tile {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .projects {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+
+  .projects-item {
+    width: 50%;
+  }
+
+  /* Section Contact */
+
+  .social-media-spaces {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .social-media {
+    padding: 10px 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  /* nav bar */
+
+  .navbar-ul {
+    display: flex;
+    font-size: 20px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+
+  .navbar-li {
+    padding-right: 40px;
+  }
+
+  /* Welcome section */
+
+  #welcome-section h1 {
+    font-size: 55px;
+  }
+
+  #welcome-section p {
+    font-size: 30px;
+  }
+
+  /* Section project */
+
+  .project-tile {
+    font-size: 30px;
+  }
+
+  .projects-iframe-p {
+    font-size: 20px;
+  }
+
+  #section-contact h2 {
+    font-size: 30px;
+  }
+
+  /* Section Contact */
+
+  #section-contact p {
+    font-size: 20px;
+  }
+
+  .social-media {
+    font-size: 25px;
+  }
+
+  .fab {
+    font-size: 30px;
+  }
+}
